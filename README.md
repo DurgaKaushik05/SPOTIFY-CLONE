@@ -187,6 +187,6 @@ project is not an official Spotify product.
 
 👩‍💻 Author
 
-Durga Kaushik | Post Graduated(MCA)
+Durga Kaushik | Post Graduated(MCA) 
 
 Made with ❤️ while learning frontend web development.
