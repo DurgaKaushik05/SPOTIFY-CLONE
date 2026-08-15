@@ -1,53 +1,43 @@
-🎵 Spotify Clone
+# 🎵 Spotify Clone
 
-A responsive Spotify-inspired music player UI built using HTML,
-CSS, and JavaScript.
-This project is created for learning and practicing frontend
-development, DOM manipulation, JavaScript events, and the HTML5 Audio
-API.
+A Spotify-inspired music player UI built using **HTML, CSS, and JavaScript**.
 
-Note: This is a frontend practice project inspired by Spotify's
-interface. It is not affiliated with or endorsed by Spotify.
+This project was created as a frontend practice project to learn DOM manipulation, JavaScript events, UI interactions, and the HTML5 Audio API.
 
-✨ Features
+> **Disclaimer:** This is an educational project inspired by Spotify's interface. It is not affiliated with, sponsored by, or endorsed by Spotify.
 
-🎨 Spotify-inspired dark user interface
+---
 
-🎵 Local MP3 music playback
+## ✨ Features
 
-▶️ Play / Pause functionality
+- 🎨 Spotify-inspired dark user interface
+- 🎵 Music player interface
+- ▶️ Play / Pause functionality
+- ⏭️ Next song functionality
+- ⏮️ Previous song functionality
+- 🔄 Automatically moves to the next song when a song ends
+- ⏱️ Current song time display
+- ⌛ Total song duration display
+- 🎚️ Interactive progress bar
+- 🎼 Dynamic song title and singer name
+- 🖼️ Album artwork and playlist cards
+- 📱 Responsive-style layout
 
-⏭️ Next song
+---
 
-⏮️ Previous song
+## 🛠️ Technologies Used
 
-🔄 Automatically plays the next song when the current song ends
+- **HTML5** – Structure of the webpage
+- **CSS3** – Styling, layout, and design
+- **JavaScript** – Functionality and DOM manipulation
+- **HTML5 Audio API** – Audio playback and controls
 
-⏱️ Current song time display
+---
 
-⌛ Total song duration display
+## 📁 Project Structure
 
-🎚️ Interactive progress bar
-
-🎼 Dynamic song title and singer name
-
-📱 Responsive-style layout for the music player interface
-
-🖼️ Album artwork and playlist cards
-
-🛠️ Technologies Used
-
-HTML5 -- Page structure
-
-CSS3 -- Styling and layout
-
-JavaScript -- Music player functionality and DOM manipulation
-
-HTML5 Audio API -- Playing and controlling audio files
-
-📁 Project Structure
-
-SPOTIFY-CLONE/
+```text
+spotify-clone/
 │
 ├── assets/
 │   ├── album_icon1.png
@@ -67,96 +57,109 @@ SPOTIFY-CLONE/
 │   ├── player_icon5.png
 │   └── ...
 │
-├── songs/
-│   ├── mixkit-beautiful-dream-493.mp3
-│   ├── mixkit-hazy-after-hours-132.mp3
-│   └── mixkit-hip-hop-02-738.mp3
-│
 ├── index.html
 ├── style.css
 ├── script.js
 └── README.md
 
-🎧 Included Songs
+🎧 Audio Files
 
-The project currently uses these local audio files for testing:
+This repository does not include third-party MP3 audio files.
 
-Song               Artist
+The music player was tested locally using audio files during development. Audio files are not included in this public repository.
 
-Beautiful Dream    Diego Nava
-Hazy After Hours   Alejandro Magaña
-Hip Hop 02         Lily J
+If you want to test the player locally, you can add your own audio files that you have permission to use.
 
-The audio files are used as local assets for this learning project.
-Check the applicable license/usage terms before redistributing them with
-a public repository.
+Create a songs folder:
+
+songs/
+├── song1.mp3
+├── song2.mp3
+└── song3.mp3
+
+Then update the songs array in script.js:
+
+const songs = [
+    {
+        name: "Your Song",
+        singer: "Your Artist",
+        file: "./songs/song1.mp3"
+    },
+    {
+        name: "Another Song",
+        singer: "Another Artist",
+        file: "./songs/song2.mp3"
+    },
+    {
+        name: "Third Song",
+        singer: "Third Artist",
+        file: "./songs/song3.mp3"
+    }
+];
+Important
+
+Only use audio files that you have permission or an appropriate license to use and redistribute.
 
 🚀 How to Run
-
-1. Clone the repository
+1. Clone the Repository
 git clone <YOUR-GITHUB-REPOSITORY-URL>
+2. Open the Project
 
-2. Open the project
 Open the project folder in VS Code.
 
-3. Run with Live Server
-If you use VS Code:
+3. Use Live Server
 
-Install the Live Server extension.
+Install the Live Server extension in VS Code.
+
+Then:
 
 Open index.html.
-
-Right-click on index.html.
-
+Right-click on the file.
 Select Open with Live Server.
-
 The project will open in your browser.
+🎵 Testing the Music Player
 
-4. Play music
+The repository contains the complete player functionality, but no third-party MP3 files.
 
-Click the Play button in the bottom music player.
+To test actual audio playback:
 
-You can then use:
+Create a songs folder.
+Add your own legally usable .mp3 files.
+Update the songs array in script.js.
+Open the project using Live Server.
+Click the Play button.
 
-Play/Pause to control playback
+The player supports:
 
-Next to play the next song
-
-Previous to play the previous song
-
-Progress bar to seek through the current song
-
+▶️ Play
+⏸️ Pause
+⏭️ Next
+⏮️ Previous
+🎚️ Progress bar
+⏱️ Current time
+⌛ Total duration
+🔄 Automatic next song
 💡 What I Learned
 
-This project helped me practice:
+Through this project, I practiced:
 
-HTML semantic structure
-
+HTML5 page structure
 CSS Flexbox and layout
-
-Responsive UI design
-
-JavaScript DOM selection
-
+Creating a Spotify-inspired UI
+JavaScript DOM manipulation
 JavaScript event listeners
-
 Arrays and objects
-
 Functions
-
 Conditional statements
-
 Managing the current song index
-
 HTML5 Audio API
-
-Updating UI dynamically
-
-Working with local assets and file paths
-
+Dynamic UI updates
+Progress bar control
+Working with local assets
+Organizing a frontend project
 🔮 Future Improvements
 
-Some features that can be added later:
+The project can be extended with:
 
 🔍 Search functionality
 ❤️ Like / Unlike songs
@@ -164,29 +167,28 @@ Some features that can be added later:
 🔀 Shuffle mode
 🔁 Repeat mode
 🔊 Volume control
-🎵 Clickable album/playlist cards
-📱 Better mobile responsiveness
-💾 LocalStorage for liked songs and playlists
-👤 Login / Signup
+🎵 Clickable album and playlist cards
+💾 Local Storage for liked songs and playlists
+📱 Improved mobile responsiveness
+👤 Login and Signup
 🗄️ Backend and database integration
-
 📸 Screenshots
 
-Add screenshots of your project here after uploading them to your
-repository.
+You can add screenshots of the project here after uploading them to the repository.
 
 Example:
 
 ![Spotify Clone Screenshot](./assets/screenshot.png)
-
 📌 Disclaimer
 
-This project is made only for educational and portfolio purposes.
-Spotify is a trademark of Spotify AB and its related entities. This
-project is not an official Spotify product.
+This project is created for educational and portfolio purposes only.
+
+Spotify is a trademark of Spotify AB and its related entities.
+
+This project is not an official Spotify product and is not affiliated with Spotify.
 
 👩‍💻 Author
 
-Durga Kaushik | Post Graduated(MCA) 
+Durga Kaushik | Post Graduated(MCA)
 
 Made with ❤️ while learning frontend web development.
